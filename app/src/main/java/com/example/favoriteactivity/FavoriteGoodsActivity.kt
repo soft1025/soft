@@ -15,5 +15,11 @@ class FavoriteGoodsActivity : AppCompatActivity() {
             val intent = Intent(this, FavoriteStoreActivity::class.java)
             startActivity(intent)
         }
+
+        val deleteFavorite2Btn : Button = findViewById(R.id.deleteFavorite2Btn) // 즐겨찾기 삭제 버튼
+        deleteFavorite2Btn.setOnClickListener{
+            val intent = Intent(this, DeleteFavoriteGoodsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
